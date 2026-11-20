@@ -1,0 +1,13 @@
+name: McBlause
+version: 1.0.0
+main: com.mcblause.McBlause
+api-version: '1.21'
+commands:
+  boss:
+    description: Boss status, arena, spawn and admin controls
+    usage: /boss [spawn|kill|info|reload|arena|setarena]
+permissions:
+  boss.use:
+    default: true
+  boss.admin:
+    default: op
