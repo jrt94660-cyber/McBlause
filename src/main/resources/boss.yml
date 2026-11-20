@@ -1,0 +1,9 @@
+spawn:
+  world: world
+  x: 0.5
+  y: 80
+  z: 0.5
+  yaw: 0
+  pitch: 0
+uuid: ''
+timer-remaining: 3600
