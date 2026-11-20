@@ -1,0 +1,55 @@
+enabled: true
+respawn-seconds: 3600
+boss:
+  display-name: '&c&lTHE BLAUSE'
+  entity: ZOMBIE
+  max-health: 100
+  scale: 1.35
+  glowing: true
+  fire: false
+  equipment:
+    helmet: NETHERITE_HELMET
+    chestplate: NETHERITE_CHESTPLATE
+    leggings: NETHERITE_LEGGINGS
+    boots: NETHERITE_BOOTS
+    weapon: NETHERITE_AXE
+  effects:
+    - 'SPEED:1'
+    - 'DAMAGE_RESISTANCE:0'
+arena:
+  spawn:
+    world: world
+    x: 0.5
+    y: 80
+    z: 0.5
+    yaw: 0
+    pitch: 0
+  bounds-radius: 80
+bar:
+  color: RED
+  style: SEGMENTED_10
+abilities:
+  enabled: true
+  slam:
+    cooldown-seconds: 12
+    radius: 5
+    damage: 8
+    knockback: 1.25
+  shockwave:
+    cooldown-seconds: 20
+    radius: 8
+    damage: 5
+  hunt:
+    speed: 0.32
+rewards:
+  enabled: true
+  killer-command: 'eco give %player% 100m'
+  participants:
+    mode: RANDOM
+    random-min: 1000000
+    random-max: 20000000
+    damage-percent: 0.35
+  command-format: 'eco give %player% %amount%'
+leaderboard:
+  show-top: 10
+  persist-damage: true
